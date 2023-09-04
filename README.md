@@ -1,7 +1,10 @@
 # POROTECH AUGMENT STATS (LIGMA LIBRARY)
 
 ## INTRODUCTION
-* This program/site was developed as a response to Riot Games' initial policy, which prohibited the publication of augment stats derived from their API game data. The policy has since been reversed as a response to this site.
+* This program/site was developed as a response to Riot Games' initial policy, which prohibited the publication of augment stats derived from their API game data. The policy has since been reversed as a response to this site. See links below:
+* https://www.reddit.com/r/CompetitiveTFT/comments/15gamcj/regarding_augment_stat_websites_and_the_subreddit/
+* https://www.reddit.com/r/CompetitiveTFT/comments/15ggp2j/reponse_to_stats_and_subreddits/
+* https://www.reddit.com/r/CompetitiveTFT/comments/15mp05z/update_on_the_removal_of_augment_stats/
 
 ## CORE FUNCTIONALITY
 * Web Scraping: Uses Python and the Beautiful Soup library to scrape data from lolchess.gg, targeting top 100 players.
