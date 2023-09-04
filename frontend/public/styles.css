@@ -1,0 +1,146 @@
+/* Custom CSS styles for the Augment Data Table */
+
+:root {
+  --background-color: #f1f7fb;
+  --container-bg-color: #fff;
+  --heading-color: #007bff;
+  --border-color: #007bff;
+  --button-bg-color: #007bff;
+  --button-text-color: #fff;
+  --table-bg-color: #ffffff;
+  --table-font-size: 14px;
+  --table-padding: 5px 8px;
+  --table-line-height: 1.4;
+  --sort-icon-size: 10px;
+  --sort-icon-margin: 2px;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.container {
+  background-color: var(--container-bg-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ui-helper-hidden-accessible {
+  font-size: 0;
+}
+
+h1 {
+  color: var(--heading-color);
+}
+
+#searchInput {
+  border-color: var(--border-color);
+  width: 100%;
+}
+
+#refreshButton {
+  background-color: var(--button-bg-color);
+  border-color: var(--border-color);
+  color: var(--button-text-color);
+}
+
+#refreshButton.btn-success {
+  background-color: #28a745 !important;
+  color: #fff;
+}
+
+/* Add some spacing around the table */
+#augmentTable {
+  margin-top: 20px;
+  font-size: var(--table-font-size);
+}
+
+/* Style for sort buttons */
+.sort-icon {
+  font-size: var(--sort-icon-size);
+  margin-left: var(--sort-icon-margin);
+  cursor: pointer;
+}
+
+/* Arrow icon rotation when descending */
+.sort-icon.desc i {
+  transform: rotate(180deg);
+}
+
+/* Reduce padding and font size for table rows and cells */
+table#augmentTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#augmentTable thead th,
+#augmentTable tbody td {
+  padding: var(--table-padding);
+  vertical-align: bottom;
+}
+
+#augmentTable tbody td {
+  font-size: var(--table-font-size);
+  line-height: var(--table-line-height);
+}
+
+/* Make the Refresh Data button smaller in width */
+#minGamesInput {
+  border-color: var(--border-color);
+  width: 50%;
+}
+
+.filter-table thead th{
+  font-size: 20px;
+}
+
+.placements-th th:nth-child(3),
+.placements-th th:nth-child(5) {
+    padding-right: 20px; 
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --container-bg-color: #262626;
+  --heading-color: #4db6ac;
+  --border-color: #4db6ac;
+  --button-bg-color: #4db6ac;
+  --button-text-color: #ffffff;
+  --table-bg-color: #333333;
+  --table-font-size: 14px;
+  --table-padding: 5px 8px;
+  --table-line-height: 1.4;
+  --sort-icon-size: 10px;
+  --sort-icon-margin: 2px;
+}
+body.dark-mode table#augmentTable {
+  color: #4db6ac;
+}
+body.dark-mode h6 {
+  color: #4db6ac;
+}
+body.dark-mode input#searchInput {
+  background-color: #333333;
+  color: #fff;
+  border-color: #4db6ac;
+}
+body.dark-mode table th,
+body.dark-mode table td {
+  color: #4db6ac;
+}
+/* CSS for jQuery UI Autocomplete in Dark Mode */
+
+/* Style for the dropdown menu */
+.ui-autocomplete.ui-widget-content {
+  background-color: #333;  /* Dark background color */
+  color: #fff;  /* Light text color */
+  border: 1px solid #555;  /* Dark border color */
+}
+
+/* Style for highlighted item */
+.ui-state-focus, .ui-state-active {
+  background-color: #555;  /* Darker background color for highlight */
+  color: #fff;  /* Light text color */
+}
